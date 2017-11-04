@@ -11,12 +11,14 @@
 #import "TQGesturesPasswordManager.h"
 #import "TQGestureLockHintLabel.h"
 #import "TQSucceedViewController.h"
+#import "TQGestureLockToast.h"
 
 @interface TQViewController2 () <TQGestureLockViewDelegate>
 
 @property (nonatomic, strong) TQGestureLockView *lockView;
 @property (nonatomic, strong) TQGestureLockHintLabel *hintLabel;
 @property (nonatomic, strong) TQGesturesPasswordManager *passwordManager;
+@property (nonatomic, assign) NSInteger restVerifyNumber;
 
 @end
 
@@ -34,6 +36,7 @@
 - (void)commonInitialization
 {
     self.passwordManager = [TQGesturesPasswordManager manager];
+    [self verifyInitialRestNumber];
 }
 
 - (void)subviewsInitialization
@@ -69,20 +72,41 @@
 - (void)gestureLockView:(TQGestureLockView *)gestureLockView lessErrorSecurityCodeSting:(NSString *)securityCodeSting
 {
     [gestureLockView setNeedsDisplayGestureLockErrorState:YES];
-    [_hintLabel setWarningText:@"密码错误，请重新输入" shakeAnimated:YES];
+    [self verifyRestNumbers];
 }
 
 - (void)gestureLockView:(TQGestureLockView *)gestureLockView finalRightSecurityCodeSting:(NSString *)securityCodeSting
 {
-    NSString *password = [self.passwordManager getEventuallyPassword];
-    if ([password isEqualToString:securityCodeSting]) {
+    if ([self.passwordManager verifyPassword:securityCodeSting]) {
         [gestureLockView setNeedsDisplayGestureLockErrorState:NO];
         TQSucceedViewController *vc = [TQSucceedViewController new];
         [self.navigationController pushViewController:vc animated:YES];
         [_hintLabel clearText];
+        [self verifyInitialRestNumber];
     } else {
         [gestureLockView setNeedsDisplayGestureLockErrorState:YES];
-        [_hintLabel setWarningText:@"密码错误，请重新输入" shakeAnimated:YES];
+        [self verifyRestNumbers];
+    }
+}
+
+- (void)verifyInitialRestNumber {
+    self.restVerifyNumber = 4;
+}
+
+- (void)verifyRestNumbers {
+    if (self.restVerifyNumber < 1) {
+        [self.view tq_showText:@"验证失败" afterDelay:2];
+        [_hintLabel clearText];
+        
+        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC));
+        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+            [self.navigationController popViewControllerAnimated:YES];
+        });
+        
+    } else {
+        NSString *text = [NSString stringWithFormat:@"密码错误，还可以再输入%lu次", self.restVerifyNumber];
+        [_hintLabel setWarningText:text shakeAnimated:YES];
+        self.restVerifyNumber -= 1;
     }
 }
 

@@ -16,6 +16,8 @@
 
 - (void)tq_showHUD:(NSString *)msg;
 - (void)tq_showHUD:(NSString *)msg afterDelay:(NSTimeInterval)delay;
+- (void)tq_showText:(NSString *)msg;
+- (void)tq_showText:(NSString *)msg afterDelay:(NSTimeInterval)delay;
 
 @end
 

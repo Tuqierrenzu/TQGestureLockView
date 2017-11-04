@@ -81,8 +81,51 @@
     [UIView animateWithDuration:0.4 animations:^{
         hud.alpha = 1;
     }];
-    double delayInSeconds = delay;
-    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delay * NSEC_PER_SEC));
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        [UIView animateWithDuration:0.4 animations:^{
+            hud.alpha = 0;
+        } completion:^(BOOL finished) {
+            [hud removeFromSuperview];
+        }];
+    });
+}
+
++ (void)showText:(NSString *)msg inView:(UIView *)sView {
+    [self showText:msg inView:sView afterDelay:1.5];
+}
+
++ (void)showText:(NSString *)msg inView:(UIView *)sView afterDelay:(NSTimeInterval)delay {
+    if (!msg.length) return;
+    CGFloat scale = [UIScreen mainScreen].scale;
+    UIEdgeInsets insets = UIEdgeInsetsMake(10, 20, 10, 20);
+    
+    UIFont *font = [UIFont systemFontOfSize:14];
+    CGSize size = [msg tq_sizeForFont:font size:CGSizeMake(200, 200) mode:NSLineBreakByCharWrapping];
+    UILabel *label = [UILabel new];
+    size = CGSizeMake(ceil(size.width * scale) / scale, ceil(size.height * scale) / scale);
+    label.frame = CGRectMake(0, 0, size.width, size.height);
+    label.font = font;
+    label.text = msg;
+    label.textColor = [UIColor whiteColor];
+    label.numberOfLines = 0;
+    
+    UIView *hud = [UIView new];
+    hud.frame = CGRectMake(0, 0, size.width + insets.left + insets.right, size.height + insets.top + insets.bottom);
+    hud.backgroundColor = [UIColor darkGrayColor];
+    hud.clipsToBounds = YES;
+    hud.layer.cornerRadius = 2;
+    
+    label.center = CGPointMake(hud.frame.size.width / 2, hud.frame.size.height / 2);
+    [hud addSubview:label];
+    hud.center = CGPointMake(sView.frame.size.width / 2, sView.frame.size.height / 2);
+    hud.alpha = 0;
+    [sView addSubview:hud];
+    
+    [UIView animateWithDuration:0.4 animations:^{
+        hud.alpha = 1;
+    }];
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delay * NSEC_PER_SEC));
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
         [UIView animateWithDuration:0.4 animations:^{
             hud.alpha = 0;
@@ -102,6 +145,14 @@
 
 - (void)tq_showHUD:(NSString *)msg afterDelay:(NSTimeInterval)delay {
     [TQGestureLockToast showHUD:msg inView:self afterDelay:delay];
+}
+
+- (void)tq_showText:(NSString *)msg {
+    [TQGestureLockToast showText:msg inView:self];
+}
+
+- (void)tq_showText:(NSString *)msg afterDelay:(NSTimeInterval)delay {
+    [TQGestureLockToast showText:msg inView:self afterDelay:delay];
 }
 
 @end

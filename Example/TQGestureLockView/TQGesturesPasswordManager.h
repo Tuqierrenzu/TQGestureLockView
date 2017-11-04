@@ -17,5 +17,6 @@
 
 - (void)saveEventuallyPassword:(NSString *)password;
 - (NSString *)getEventuallyPassword;
+- (BOOL)verifyPassword:(NSString *)password;
 
 @end
