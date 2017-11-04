@@ -1,0 +1,6 @@
+framework module TQGestureLockView {
+  umbrella header "TQGestureLockView-umbrella.h"
+
+  export *
+  module * { export * }
+}

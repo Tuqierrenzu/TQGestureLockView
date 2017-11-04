@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'TQGestureLockView_Example' do
+  pod 'TQGestureLockView', :path => '../'
+
+  target 'TQGestureLockView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

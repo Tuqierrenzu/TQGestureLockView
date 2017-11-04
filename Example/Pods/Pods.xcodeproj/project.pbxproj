@@ -1,0 +1,722 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		239441BD9731F0CF08F4B09545AB75F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		30CE72E3AF629A3B2F921CCDE5CB872C /* TQGestureLockView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9454F7A2A36602718F8D9D6B4B39891 /* TQGestureLockView-dummy.m */; };
+		443F5B8498A3288EACC11037C60CBD35 /* TQGestureLockDrawManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C05FFCB40529BAD64451DE79E3CAD03 /* TQGestureLockDrawManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61AA9F7B2B355510E80F9CAA5F673588 /* Pods-TQGestureLockView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62063B645811F88571BA0893B3D9E783 /* Pods-TQGestureLockView_Example-dummy.m */; };
+		64FF7B0CBF420B1CA927D457FF19A494 /* TQGestureLockPreview.h in Headers */ = {isa = PBXBuildFile; fileRef = C28102B9D29F311DF058D1B2831948D8 /* TQGestureLockPreview.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76113DFB72CF0B70066CDE583468D99C /* TQGestureLockDrawManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8338548B3672A99D7EDF1AAE5ECD4BD7 /* TQGestureLockDrawManager.m */; };
+		792444D862E8BE0ED587E03C2F048F40 /* Pods-TQGestureLockView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A41A980C29088AFF8DCFBB5C64B849 /* Pods-TQGestureLockView_Tests-dummy.m */; };
+		81118390C848DCB16DC32BC6974D85F2 /* TQGestureLockView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D5555B49F4F9572E7F2CBE8A1274E8B /* TQGestureLockView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		829B39F64BA31DE069B70A28F2FDF68A /* TQGestureLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9D21FC2DEC608C7514CF0ACD799928 /* TQGestureLockView.m */; };
+		82FBE5F13FE17F222FE92F5BD334F398 /* TQGestureLockPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = FF4B6A1A15957D59767166520A617BF8 /* TQGestureLockPreview.m */; };
+		94B25E592C15ECD0E80659F206FCBAE3 /* Pods-TQGestureLockView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41FDAF12B040F89B38984FF5EC28B53B /* Pods-TQGestureLockView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0933C8F718A63363373E081B323BB25 /* TQGestureLockView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AFD046C11CB5C00A32BDE5C9D50D2766 /* TQGestureLockView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB98041EDA48E12E93B71ACBCEE2AB7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		C5F8C826C7D7414BADF9B2DC10A3867B /* Pods-TQGestureLockView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A29121FA90A49E58C49B466B8E59ECD /* Pods-TQGestureLockView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD7BB2DF37733982658D5A06545F29C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28106376328847125EC465BEC10ACA46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D3DD2A4342220B24657427F9AC8E37F;
+			remoteInfo = TQGestureLockView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DE40A368E3231F0D5FA8A0DD0842A1E /* Pods-TQGestureLockView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TQGestureLockView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1817060DEFECFA70FA6726C5B52934DA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B9A03DC93FB30C9FE2C6F4E242E6272 /* Pods-TQGestureLockView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TQGestureLockView_Tests-resources.sh"; sourceTree = "<group>"; };
+		1E6DBE5E22EDA2E70E446908368F3F80 /* Pods-TQGestureLockView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TQGestureLockView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		28C783F54351EC18AB638EF83C5B5D47 /* Pods-TQGestureLockView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TQGestureLockView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		32C32A85BFD5F8249E7BEF63E06968F7 /* Pods-TQGestureLockView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TQGestureLockView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		33A41A980C29088AFF8DCFBB5C64B849 /* Pods-TQGestureLockView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TQGestureLockView_Tests-dummy.m"; sourceTree = "<group>"; };
+		3C05FFCB40529BAD64451DE79E3CAD03 /* TQGestureLockDrawManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TQGestureLockDrawManager.h; path = TQGestureLockView/Classes/TQGestureLockDrawManager.h; sourceTree = "<group>"; };
+		3C9C898C42E76F40E4375D5FE45AF739 /* Pods-TQGestureLockView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TQGestureLockView_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		3F4BED69FA667F5EFB391F0E02A86D56 /* TQGestureLockView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TQGestureLockView.framework; path = TQGestureLockView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41FDAF12B040F89B38984FF5EC28B53B /* Pods-TQGestureLockView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TQGestureLockView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		55AFA2F9BD4E406E1E440C809E5B93CC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C4C0D0FB41DE193A8724432B282553D /* Pods-TQGestureLockView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TQGestureLockView_Example-resources.sh"; sourceTree = "<group>"; };
+		5E698B9576A97A67B8BCC78E865E58F5 /* Pods-TQGestureLockView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TQGestureLockView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		62063B645811F88571BA0893B3D9E783 /* Pods-TQGestureLockView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TQGestureLockView_Example-dummy.m"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		675BE8F5BB118D6C9797C40F18D277C0 /* TQGestureLockView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TQGestureLockView.modulemap; sourceTree = "<group>"; };
+		6A5183FB93E7D9CA6E0429B9C55BF5D0 /* Pods-TQGestureLockView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TQGestureLockView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		7915339700745FF1CC040F4F2A82FE14 /* Pods-TQGestureLockView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TQGestureLockView_Example.modulemap"; sourceTree = "<group>"; };
+		7D5555B49F4F9572E7F2CBE8A1274E8B /* TQGestureLockView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TQGestureLockView.h; path = TQGestureLockView/Classes/TQGestureLockView.h; sourceTree = "<group>"; };
+		8338548B3672A99D7EDF1AAE5ECD4BD7 /* TQGestureLockDrawManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TQGestureLockDrawManager.m; path = TQGestureLockView/Classes/TQGestureLockDrawManager.m; sourceTree = "<group>"; };
+		8874CFE31B4D8DAD5BC02120C6BD2B5B /* Pods-TQGestureLockView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TQGestureLockView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8A29121FA90A49E58C49B466B8E59ECD /* Pods-TQGestureLockView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TQGestureLockView_Example-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A542F433F12651615FD95E1FCECDD385 /* Pods_TQGestureLockView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TQGestureLockView_Tests.framework; path = "Pods-TQGestureLockView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE4792E8BBF119FEFC936688FF26A6C2 /* Pods-TQGestureLockView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TQGestureLockView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		AFD046C11CB5C00A32BDE5C9D50D2766 /* TQGestureLockView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TQGestureLockView-umbrella.h"; sourceTree = "<group>"; };
+		BD44BEBA3E35ED3322B4DF231C2FB270 /* Pods-TQGestureLockView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TQGestureLockView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		BECC1091141A7CF8C9837F4BC03F48D9 /* TQGestureLockView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TQGestureLockView-prefix.pch"; sourceTree = "<group>"; };
+		C28102B9D29F311DF058D1B2831948D8 /* TQGestureLockPreview.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TQGestureLockPreview.h; path = TQGestureLockView/Classes/TQGestureLockPreview.h; sourceTree = "<group>"; };
+		D038F8B030C10B3A697666FA33431C29 /* Pods-TQGestureLockView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TQGestureLockView_Tests.modulemap"; sourceTree = "<group>"; };
+		D7657F004D59C856F3F52CCBF2D7E977 /* TQGestureLockView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TQGestureLockView.xcconfig; sourceTree = "<group>"; };
+		D9454F7A2A36602718F8D9D6B4B39891 /* TQGestureLockView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TQGestureLockView-dummy.m"; sourceTree = "<group>"; };
+		E8096CF54341C5A4186AE4473F8CE142 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5373CD1C22FFC03DB3730B46CD40F9A /* Pods_TQGestureLockView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TQGestureLockView_Example.framework; path = "Pods-TQGestureLockView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE9D21FC2DEC608C7514CF0ACD799928 /* TQGestureLockView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TQGestureLockView.m; path = TQGestureLockView/Classes/TQGestureLockView.m; sourceTree = "<group>"; };
+		FF4B6A1A15957D59767166520A617BF8 /* TQGestureLockPreview.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TQGestureLockPreview.m; path = TQGestureLockView/Classes/TQGestureLockPreview.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		039D02708E117847197A9EF95676A904 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD7BB2DF37733982658D5A06545F29C1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1C02F77F4BCD5F6015D31977DF514BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB98041EDA48E12E93B71ACBCEE2AB7E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFE0E4F45E87EC9F88942F4C8E9151D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				239441BD9731F0CF08F4B09545AB75F3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15650D32D740B231C914270481B96A05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5373CD1C22FFC03DB3730B46CD40F9A /* Pods_TQGestureLockView_Example.framework */,
+				A542F433F12651615FD95E1FCECDD385 /* Pods_TQGestureLockView_Tests.framework */,
+				3F4BED69FA667F5EFB391F0E02A86D56 /* TQGestureLockView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				852EA7C8C3980C11418777F080B625BC /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				15650D32D740B231C914270481B96A05 /* Products */,
+				967E7F1E7EF5A0748BE3FDAC7653FE0A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		852EA7C8C3980C11418777F080B625BC /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF318431D0111AD517E25247A3CBFDB2 /* TQGestureLockView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		8BD37E2C9D00F123B971180B842591F8 /* Pods-TQGestureLockView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E8096CF54341C5A4186AE4473F8CE142 /* Info.plist */,
+				D038F8B030C10B3A697666FA33431C29 /* Pods-TQGestureLockView_Tests.modulemap */,
+				28C783F54351EC18AB638EF83C5B5D47 /* Pods-TQGestureLockView_Tests-acknowledgements.markdown */,
+				0DE40A368E3231F0D5FA8A0DD0842A1E /* Pods-TQGestureLockView_Tests-acknowledgements.plist */,
+				33A41A980C29088AFF8DCFBB5C64B849 /* Pods-TQGestureLockView_Tests-dummy.m */,
+				3C9C898C42E76F40E4375D5FE45AF739 /* Pods-TQGestureLockView_Tests-frameworks.sh */,
+				1B9A03DC93FB30C9FE2C6F4E242E6272 /* Pods-TQGestureLockView_Tests-resources.sh */,
+				41FDAF12B040F89B38984FF5EC28B53B /* Pods-TQGestureLockView_Tests-umbrella.h */,
+				AE4792E8BBF119FEFC936688FF26A6C2 /* Pods-TQGestureLockView_Tests.debug.xcconfig */,
+				32C32A85BFD5F8249E7BEF63E06968F7 /* Pods-TQGestureLockView_Tests.release.xcconfig */,
+			);
+			name = "Pods-TQGestureLockView_Tests";
+			path = "Target Support Files/Pods-TQGestureLockView_Tests";
+			sourceTree = "<group>";
+		};
+		967E7F1E7EF5A0748BE3FDAC7653FE0A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F025E1D811AC105B473DB0C169E4F1F8 /* Pods-TQGestureLockView_Example */,
+				8BD37E2C9D00F123B971180B842591F8 /* Pods-TQGestureLockView_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF318431D0111AD517E25247A3CBFDB2 /* TQGestureLockView */ = {
+			isa = PBXGroup;
+			children = (
+				3C05FFCB40529BAD64451DE79E3CAD03 /* TQGestureLockDrawManager.h */,
+				8338548B3672A99D7EDF1AAE5ECD4BD7 /* TQGestureLockDrawManager.m */,
+				C28102B9D29F311DF058D1B2831948D8 /* TQGestureLockPreview.h */,
+				FF4B6A1A15957D59767166520A617BF8 /* TQGestureLockPreview.m */,
+				7D5555B49F4F9572E7F2CBE8A1274E8B /* TQGestureLockView.h */,
+				FE9D21FC2DEC608C7514CF0ACD799928 /* TQGestureLockView.m */,
+				D4C63FD2B3CBA901E070BEA510D4F22F /* Support Files */,
+			);
+			name = TQGestureLockView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D4C63FD2B3CBA901E070BEA510D4F22F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				55AFA2F9BD4E406E1E440C809E5B93CC /* Info.plist */,
+				675BE8F5BB118D6C9797C40F18D277C0 /* TQGestureLockView.modulemap */,
+				D7657F004D59C856F3F52CCBF2D7E977 /* TQGestureLockView.xcconfig */,
+				D9454F7A2A36602718F8D9D6B4B39891 /* TQGestureLockView-dummy.m */,
+				BECC1091141A7CF8C9837F4BC03F48D9 /* TQGestureLockView-prefix.pch */,
+				AFD046C11CB5C00A32BDE5C9D50D2766 /* TQGestureLockView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/TQGestureLockView";
+			sourceTree = "<group>";
+		};
+		F025E1D811AC105B473DB0C169E4F1F8 /* Pods-TQGestureLockView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				1817060DEFECFA70FA6726C5B52934DA /* Info.plist */,
+				7915339700745FF1CC040F4F2A82FE14 /* Pods-TQGestureLockView_Example.modulemap */,
+				8874CFE31B4D8DAD5BC02120C6BD2B5B /* Pods-TQGestureLockView_Example-acknowledgements.markdown */,
+				5E698B9576A97A67B8BCC78E865E58F5 /* Pods-TQGestureLockView_Example-acknowledgements.plist */,
+				62063B645811F88571BA0893B3D9E783 /* Pods-TQGestureLockView_Example-dummy.m */,
+				6A5183FB93E7D9CA6E0429B9C55BF5D0 /* Pods-TQGestureLockView_Example-frameworks.sh */,
+				5C4C0D0FB41DE193A8724432B282553D /* Pods-TQGestureLockView_Example-resources.sh */,
+				8A29121FA90A49E58C49B466B8E59ECD /* Pods-TQGestureLockView_Example-umbrella.h */,
+				1E6DBE5E22EDA2E70E446908368F3F80 /* Pods-TQGestureLockView_Example.debug.xcconfig */,
+				BD44BEBA3E35ED3322B4DF231C2FB270 /* Pods-TQGestureLockView_Example.release.xcconfig */,
+			);
+			name = "Pods-TQGestureLockView_Example";
+			path = "Target Support Files/Pods-TQGestureLockView_Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		71BE6C1AE91F5C8FA4C1ACBC2B28896F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94B25E592C15ECD0E80659F206FCBAE3 /* Pods-TQGestureLockView_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D816F1C5BA666484D4C61CB755605245 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				443F5B8498A3288EACC11037C60CBD35 /* TQGestureLockDrawManager.h in Headers */,
+				64FF7B0CBF420B1CA927D457FF19A494 /* TQGestureLockPreview.h in Headers */,
+				A0933C8F718A63363373E081B323BB25 /* TQGestureLockView-umbrella.h in Headers */,
+				81118390C848DCB16DC32BC6974D85F2 /* TQGestureLockView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF9733B7F1F435EC80BB5BDC3376B38C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5F8C826C7D7414BADF9B2DC10A3867B /* Pods-TQGestureLockView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5C2F24EFDBD7F569A6E7BBDD609A6A71 /* Pods-TQGestureLockView_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60DEF69D2112DB2C68B94298A5D30B67 /* Build configuration list for PBXNativeTarget "Pods-TQGestureLockView_Tests" */;
+			buildPhases = (
+				5F010B2CEF6E61DFA27B4F07BE6433C3 /* Sources */,
+				039D02708E117847197A9EF95676A904 /* Frameworks */,
+				71BE6C1AE91F5C8FA4C1ACBC2B28896F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TQGestureLockView_Tests";
+			productName = "Pods-TQGestureLockView_Tests";
+			productReference = A542F433F12651615FD95E1FCECDD385 /* Pods_TQGestureLockView_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5D3DD2A4342220B24657427F9AC8E37F /* TQGestureLockView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05BEA92ECEC7A5899055D4A328D08D7B /* Build configuration list for PBXNativeTarget "TQGestureLockView" */;
+			buildPhases = (
+				2BBAB0A011131013A4F5E7EB3C79927E /* Sources */,
+				D1C02F77F4BCD5F6015D31977DF514BA /* Frameworks */,
+				D816F1C5BA666484D4C61CB755605245 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TQGestureLockView;
+			productName = TQGestureLockView;
+			productReference = 3F4BED69FA667F5EFB391F0E02A86D56 /* TQGestureLockView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D120CEDE73E4D89F0AB7F2B3E462C302 /* Pods-TQGestureLockView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08361C676890B73E4C48963920CE92A7 /* Build configuration list for PBXNativeTarget "Pods-TQGestureLockView_Example" */;
+			buildPhases = (
+				D398E8260744A2AEE21B16F724777738 /* Sources */,
+				FFE0E4F45E87EC9F88942F4C8E9151D7 /* Frameworks */,
+				FF9733B7F1F435EC80BB5BDC3376B38C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0BBE3398874A1A689B02FF781739C335 /* PBXTargetDependency */,
+			);
+			name = "Pods-TQGestureLockView_Example";
+			productName = "Pods-TQGestureLockView_Example";
+			productReference = F5373CD1C22FFC03DB3730B46CD40F9A /* Pods_TQGestureLockView_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 15650D32D740B231C914270481B96A05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D120CEDE73E4D89F0AB7F2B3E462C302 /* Pods-TQGestureLockView_Example */,
+				5C2F24EFDBD7F569A6E7BBDD609A6A71 /* Pods-TQGestureLockView_Tests */,
+				5D3DD2A4342220B24657427F9AC8E37F /* TQGestureLockView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BBAB0A011131013A4F5E7EB3C79927E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76113DFB72CF0B70066CDE583468D99C /* TQGestureLockDrawManager.m in Sources */,
+				82FBE5F13FE17F222FE92F5BD334F398 /* TQGestureLockPreview.m in Sources */,
+				30CE72E3AF629A3B2F921CCDE5CB872C /* TQGestureLockView-dummy.m in Sources */,
+				829B39F64BA31DE069B70A28F2FDF68A /* TQGestureLockView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F010B2CEF6E61DFA27B4F07BE6433C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				792444D862E8BE0ED587E03C2F048F40 /* Pods-TQGestureLockView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D398E8260744A2AEE21B16F724777738 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61AA9F7B2B355510E80F9CAA5F673588 /* Pods-TQGestureLockView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0BBE3398874A1A689B02FF781739C335 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TQGestureLockView;
+			target = 5D3DD2A4342220B24657427F9AC8E37F /* TQGestureLockView */;
+			targetProxy = 28106376328847125EC465BEC10ACA46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		157AF0CD5E5AB2A2E74D3B8ECD865185 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4091F502096B3E26F8BC3B0FEC4BA441 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD44BEBA3E35ED3322B4DF231C2FB270 /* Pods-TQGestureLockView_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TQGestureLockView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TQGestureLockView_Example/Pods-TQGestureLockView_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TQGestureLockView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4CF45E7B0EFC469B23670EE83A4AAEA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE4792E8BBF119FEFC936688FF26A6C2 /* Pods-TQGestureLockView_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TQGestureLockView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TQGestureLockView_Tests/Pods-TQGestureLockView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TQGestureLockView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A4259DEF5029E90A0519DA42B6006088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32C32A85BFD5F8249E7BEF63E06968F7 /* Pods-TQGestureLockView_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TQGestureLockView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TQGestureLockView_Tests/Pods-TQGestureLockView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TQGestureLockView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B5D5D64A82CFF3F05B8B0076604FE85C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7657F004D59C856F3F52CCBF2D7E977 /* TQGestureLockView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TQGestureLockView/TQGestureLockView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TQGestureLockView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TQGestureLockView/TQGestureLockView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TQGestureLockView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D2A2CC365BCF15A3B65ADB8409F5DEF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7657F004D59C856F3F52CCBF2D7E977 /* TQGestureLockView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TQGestureLockView/TQGestureLockView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TQGestureLockView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TQGestureLockView/TQGestureLockView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TQGestureLockView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EED546DBB23FC32035C9BDC4E22B30BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		FB70DED3E45EE840A219F46D664861D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E6DBE5E22EDA2E70E446908368F3F80 /* Pods-TQGestureLockView_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TQGestureLockView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TQGestureLockView_Example/Pods-TQGestureLockView_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TQGestureLockView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05BEA92ECEC7A5899055D4A328D08D7B /* Build configuration list for PBXNativeTarget "TQGestureLockView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2A2CC365BCF15A3B65ADB8409F5DEF1 /* Debug */,
+				B5D5D64A82CFF3F05B8B0076604FE85C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08361C676890B73E4C48963920CE92A7 /* Build configuration list for PBXNativeTarget "Pods-TQGestureLockView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB70DED3E45EE840A219F46D664861D5 /* Debug */,
+				4091F502096B3E26F8BC3B0FEC4BA441 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED546DBB23FC32035C9BDC4E22B30BD /* Debug */,
+				157AF0CD5E5AB2A2E74D3B8ECD865185 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60DEF69D2112DB2C68B94298A5D30B67 /* Build configuration list for PBXNativeTarget "Pods-TQGestureLockView_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CF45E7B0EFC469B23670EE83A4AAEA2 /* Debug */,
+				A4259DEF5029E90A0519DA42B6006088 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
