@@ -17,6 +17,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## CocoaPods
 
 TQGestureLockViewDemo is available through [CocoaPods](http://cocoapods.org).
+
 You can install the latest release version of CocoaPods with the following command:
 ```bash
 $ gem install cocoapods
