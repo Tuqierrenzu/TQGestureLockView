@@ -5,6 +5,10 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](http://cocoapods.org/pods/TQGestureLockViewDemo)
 [![Platform](https://img.shields.io/badge/platform-%20iOS7.0+%20-lightgrey.svg)](http://cocoapods.org/pods/TQGestureLockViewDemo)
 
+## Preview 
+
+<img src="http://oqebi7u13.bkt.clouddn.com/preview_gestureLockView.gif" width="204px" height="365px">
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
