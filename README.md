@@ -7,7 +7,7 @@
 
 ## Preview 
 
-<img src="http://oqebi7u13.bkt.clouddn.com/preview_gestureLockView.gif" width="204px" height="365px">
+<img src="http://oqebi7u13.bkt.clouddn.com/gif_gestureLockView5.gif" width="204px" height="365px">
 
 ## Example
 
