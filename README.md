@@ -1,7 +1,7 @@
 # TQGestureLockView
 
 [![Language](https://img.shields.io/badge/Language-%20Objective--C%20-orange.svg)](https://travis-ci.org/TQTeam/TQGestureLockViewDemo)
-[![Version](https://img.shields.io/badge/pod-v0.1.0-brightgreen.svg)](http://cocoapods.org/pods/TQGestureLockViewDemo)
+[![Version](https://img.shields.io/badge/pod-v0.1.1-brightgreen.svg)](http://cocoapods.org/pods/TQGestureLockViewDemo)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](http://cocoapods.org/pods/TQGestureLockViewDemo)
 [![Platform](https://img.shields.io/badge/platform-%20iOS7.0+%20-lightgrey.svg)](http://cocoapods.org/pods/TQGestureLockViewDemo)
 
@@ -29,7 +29,7 @@ $ gem install cocoapods
 Simply add the following line to your Podfile:
 
 ```ruby
-pod 'TQGestureLockView'
+pod 'TQGestureLockView', '~> 0.1.1'
 ```
 Then, run the following command:
 
