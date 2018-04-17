@@ -37,6 +37,12 @@ Then, run the following command:
 $ pod install
 ```
 
+## Third Party Bindings
+
+### React Native
+You may now use this library with [React Native](https://github.com/facebook/react-native) via the module [here](https://github.com/prscX/react-native-lock-screen)
+
+
 ## Author
 
 TQTeam, haozhang0770@163.com, ZhengJiaoHong6@gmail.com
